@@ -17,9 +17,9 @@ var url = new URL(url_string);
 			console.log(url,'URL')
 console.log('url',url);
 
-    var c = url.searchParams.get("utm_source");
+    var c = url.searchParams.get("utm_source")|| " ";
 
-var utmpar=url.searchParams.get("utm_campaign");
+var utmpar=url.searchParams.get("utm_campaign")|| " ";
 console.log(utmpar,'utmpar');
 console. log(c,'c');
 
