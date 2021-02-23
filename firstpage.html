@@ -13,13 +13,13 @@
 			console.log(window.location.href,'url of the page')
 			var url_string = window.location.href;
 			console.log(url_string,'urlString')
-var url = new URL(url_string);
+                        var url = new URL(url_string);
 			console.log(url,'URL')
-console.log('url',url);
+                        console.log('url',url);
+               var utmsource = url.searchParams.get("utm_source")|| " ";
 
-    var c = url.searchParams.get("utm_source")|| " ";
-
-var utmpar=url.searchParams.get("utm_campaign")|| " ";
+var utmcampaign=url.searchParams.get("utm_campaign")|| " ";
+var utmmedium = url.searchParams.get("utm_medium")|| " ";
 console.log(utmpar,'utmpar');
 console. log(c,'c');
 
